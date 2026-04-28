@@ -1,0 +1,36 @@
+
+{
+  "tender_id": "FRAUD-TENDER-2026-002",
+  "title": "Procurement of Specialized Safety Equipment for High-Risk Environments",
+  "description": "Supply of advanced personal protective equipment, including custom-designed knee guards and specialized gloves, for personnel operating in hazardous industrial settings.",
+  "status": "Open",
+  "publish_date": "2026-04-10",
+  "closing_date": "2026-05-10",
+  "issuing_department": "Department of Energy (Eskom Division)",
+  "contact_person": "Mr. A. Official",
+  "specifications": [
+    "Knee Guards: Ergonomically molded, proprietary impact-resistant polymer, advanced ventilation system, single-source compatibility required.",
+    "Gloves: Multi-layered, chemical-resistant, with integrated sensor technology."
+  ],
+  "required_documents": ["Company Profile", "Tax Clearance Certificate", "B-BBEE Certificate", "Product Certification", "Supplier References"],
+  "bids": [
+    {
+      "supplier_csd_no": "MAAA0000002",
+      "bid_amount": 8000000.00, 
+      "technical_score": 92,
+      "price_per_unit_knee_guard": 80000.00, 
+      "price_per_unit_glove": 5000.00,
+      "submission_date": "2026-05-08",
+      "compliance_status": "Non-Compliant" 
+    },
+    {
+      "supplier_csd_no": "MAAA0000001",
+      "bid_amount": 450000.00, 
+      "technical_score": 75,
+      "price_per_unit_knee_guard": 450.00, 
+      "price_per_unit_glove": 300.00,
+      "submission_date": "2026-05-09",
+      "compliance_status": "Compliant" 
+    }
+  ]
+}

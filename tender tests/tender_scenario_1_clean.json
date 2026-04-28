@@ -1,0 +1,39 @@
+
+{
+  "tender_id": "CLEAN-TENDER-2026-001",
+  "title": "Supply of Standard Office Furniture",
+  "description": "Procurement of standard office desks, chairs, and filing cabinets for various government departments. Quality and durability are key considerations.",
+  "status": "Open",
+  "publish_date": "2026-04-20",
+  "closing_date": "2026-05-20",
+  "issuing_department": "Department of Public Service and Administration",
+  "contact_person": "Ms. L. Admin",
+  "specifications": [
+    "Office Desk: Standard size (120x60cm), durable laminate finish, steel frame.",
+    "Office Chair: Ergonomic design, adjustable height, mesh back, swivel base.",
+    "Filing Cabinet: 4-drawer, steel construction, lockable."
+  ],
+  "required_documents": ["Company Profile", "Tax Clearance Certificate", "B-BBEE Certificate", "Product Catalog"],
+  "bids": [
+    {
+      "supplier_csd_no": "MAAA0000001",
+      "bid_amount": 250000.00,
+      "technical_score": 88,
+      "price_per_unit_desk": 1500.00,
+      "price_per_unit_chair": 1000.00,
+      "price_per_unit_cabinet": 800.00,
+      "submission_date": "2026-05-18",
+      "compliance_status": "Compliant"
+    },
+    {
+      "supplier_csd_no": "MAAA0000003",
+      "bid_amount": 265000.00,
+      "technical_score": 85,
+      "price_per_unit_desk": 1600.00,
+      "price_per_unit_chair": 1100.00,
+      "price_per_unit_cabinet": 850.00,
+      "submission_date": "2026-05-19",
+      "compliance_status": "Compliant"
+    }
+  ]
+}

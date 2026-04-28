@@ -1,0 +1,32 @@
+
+{
+  "csd_supplier_no": "MAAA0000004",
+  "supplier_name": "Swift Solutions (Pty) Ltd",
+  "registration_date": "2023-01-15",
+  "status": "Verified",
+  "verification_status": {
+    "bank_details": "Verified",
+    "tax_compliance": "Not Verified",
+    "b_bbee": "Verified"
+  },
+  "tax_compliance_status": "non-compliant",
+  "b_bbee_level": "Level 1",
+  "contact_person": {
+    "name": "Nomusa Khumalo",
+    "email": "nomusa.khumalo@swiftsolutions.co.za",
+    "phone": "0123456789"
+  },
+  "bank_details": {
+    "bank_name": "Capitec",
+    "account_number": "47000000004",
+    "account_type": "Cheque"
+  },
+  "physical_address": {
+    "street": "456 Ghost Lane",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postal_code": "0001"
+  },
+  "commodity_codes": ["02020201", "02020202"],
+  "directors_id_numbers": ["7007075000088", "9009095000087"]
+}

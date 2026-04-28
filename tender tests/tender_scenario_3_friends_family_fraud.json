@@ -1,0 +1,33 @@
+
+{
+  "tender_id": "FAMILY-FRAUD-2026-003",
+  "title": "Provision of IT Consulting Services for Digital Transformation",
+  "description": "Consulting services required for the assessment and planning phase of a major digital transformation initiative. Expertise in legacy system integration and cloud migration is essential.",
+  "status": "Open",
+  "publish_date": "2026-04-05",
+  "closing_date": "2026-05-05",
+  "issuing_department": "Department of Communications and Digital Technologies",
+  "contact_person": "Mr. S. Dlamini",
+  "specifications": [
+    "Consultant must have a minimum of 10 years experience in large-scale government IT projects.",
+    "Demonstrable expertise in a niche, proprietary legacy system (e.g., 'GovSys 3.0') is highly advantageous.",
+    "Team lead must possess specific certification 'XYZ-Cloud Architect Professional' (only held by a few individuals)."
+  ],
+  "required_documents": ["Company Profile", "Tax Clearance Certificate", "B-BBEE Certificate", "Consultant CVs", "Project Portfolio"],
+  "bids": [
+    {
+      "supplier_csd_no": "MAAA0000004", 
+      "bid_amount": 15000000.00,
+      "technical_score": 98,
+      "submission_date": "2026-05-03",
+      "compliance_status": "Compliant" 
+    },
+    {
+      "supplier_csd_no": "MAAA0000001",
+      "bid_amount": 12000000.00,
+      "technical_score": 80,
+      "submission_date": "2026-05-04",
+      "compliance_status": "Compliant"
+    }
+  ]
+}

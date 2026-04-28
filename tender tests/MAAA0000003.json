@@ -1,0 +1,32 @@
+
+{
+  "csd_supplier_no": "MAAA0000003",
+  "supplier_name": "Quality Office Solutions (Pty) Ltd",
+  "registration_date": "2021-08-15",
+  "status": "Verified",
+  "verification_status": {
+    "bank_details": "Verified",
+    "tax_compliance": "Verified",
+    "b_bbee": "Verified"
+  },
+  "tax_compliance_status": "compliant",
+  "b_bbee_level": "Level 2",
+  "contact_person": {
+    "name": "Thabo Mokoena",
+    "email": "thabo.mokoena@qualityoffice.co.za",
+    "phone": "0112345678"
+  },
+  "bank_details": {
+    "bank_name": "Standard Bank",
+    "account_number": "07000000003",
+    "account_type": "Cheque"
+  },
+  "physical_address": {
+    "street": "789 Business Park",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postal_code": "2001"
+  },
+  "commodity_codes": ["01010101", "01010103"],
+  "directors_id_numbers": ["8103035000085"]
+}

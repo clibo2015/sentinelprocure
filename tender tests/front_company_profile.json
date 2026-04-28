@@ -1,0 +1,39 @@
+
+{
+  "company_reg_no": "2023/998877/07",
+  "company_name": "Swift Solutions (Pty) Ltd",
+  "registration_date": "2023-01-15",
+  "status": "Active",
+  "physical_address": {
+    "street": "456 Ghost Lane",
+    "city": "Pretoria",
+    "province": "Gauteng",
+    "postal_code": "0001"
+  },
+  "directors": [
+    {
+      "id_number": "7007075000088",
+      "full_name": "Sipho Dlamini",
+      "appointment_date": "2023-01-15",
+      "status": "Active",
+      "linked_companies": [
+        "2023/998877/07"
+      ]
+    },
+    {
+      "id_number": "9009095000087",
+      "full_name": "Nomusa Khumalo",
+      "appointment_date": "2023-01-15",
+      "status": "Active",
+      "linked_companies": []
+    }
+  ],
+  "beneficial_owners": [
+    {
+      "id_number": "7007075000088",
+      "full_name": "Sipho Dlamini",
+      "ownership_percentage": 70,
+      "date_of_ownership": "2023-01-15"
+    }
+  ]
+}

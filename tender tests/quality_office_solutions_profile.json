@@ -1,0 +1,30 @@
+
+{
+  "company_reg_no": "2021/777888/07",
+  "company_name": "Quality Office Solutions (Pty) Ltd",
+  "registration_date": "2021-08-15",
+  "status": "Active",
+  "physical_address": {
+    "street": "789 Business Park",
+    "city": "Johannesburg",
+    "province": "Gauteng",
+    "postal_code": "2001"
+  },
+  "directors": [
+    {
+      "id_number": "8103035000085",
+      "full_name": "Thabo Mokoena",
+      "appointment_date": "2021-08-15",
+      "status": "Active",
+      "linked_companies": []
+    }
+  ],
+  "beneficial_owners": [
+    {
+      "id_number": "8103035000085",
+      "full_name": "Thabo Mokoena",
+      "ownership_percentage": 100,
+      "date_of_ownership": "2021-08-15"
+    }
+  ]
+}
