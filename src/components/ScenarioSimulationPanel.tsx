@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useScenario, type ScenarioId } from '../context/ScenarioContext';
-import { Play, ShieldAlert, CheckCircle, Users, X, Info } from 'lucide-react';
+import { Play, ShieldAlert, CheckCircle, Users, X, Info, Building } from 'lucide-react';
 import { Badge } from './ui/Badge';
 
 export const ScenarioSimulationPanel: React.FC = () => {
@@ -28,6 +28,13 @@ export const ScenarioSimulationPanel: React.FC = () => {
       icon: <Users className="text-purple-500" size={18} />,
       desc: 'Unmask beneficial ownership link between Official & Vendor.',
       color: 'border-purple-500/20 bg-purple-50/30'
+    },
+    {
+      id: 'SCENARIO_4',
+      title: 'Scenario 4: Lighthouse Shell',
+      icon: <Building className="text-orange-500" size={18} />,
+      desc: 'Block R1.6B tender award to company registered 3 days ago.',
+      color: 'border-orange-500/20 bg-orange-50/30'
     }
   ];
 

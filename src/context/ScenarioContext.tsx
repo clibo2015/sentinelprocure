@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useCallback } from 'react';
 import type { Tender, RedFlag, Vendor } from '../data/mockData';
 import type { PriceAlert, OwnershipGraph, BidSubmission } from '../data/extendedData';
 
-export type ScenarioId = 'SCENARIO_1' | 'SCENARIO_2' | 'SCENARIO_3' | 'NONE';
+export type ScenarioId = 'SCENARIO_1' | 'SCENARIO_2' | 'SCENARIO_3' | 'SCENARIO_4' | 'NONE';
 
 interface ScenarioData {
   tenders: Tender[];
@@ -313,6 +313,89 @@ export const ScenarioProvider: React.FC<{ children: React.ReactNode }> = ({ chil
           ]
         };
       
+      case 'SCENARIO_4':
+        return {
+          tenders: [{
+            id: 'T_SCEN_4',
+            reference: 'DBE/EDU/2026/004',
+            title: 'Procurement of Foundation Phase Textbooks (National)',
+            department: 'Dept. of Basic Education',
+            value: 1600000000,
+            status: 'FLAGGED',
+            riskScore: 99,
+            riskLevel: 'CRITICAL',
+            flags: ['Impossible Track Record', 'Shell Company Suspected'],
+            submittedDate: '2026-04-20',
+            closingDate: '2026-05-15',
+            province: 'National',
+            category: 'Educational Materials',
+            biddersCount: 1,
+            integrityScore: 2,
+          }],
+          redFlags: [
+            {
+              id: 'RF_SCEN_4_1',
+              tenderId: 'T_SCEN_4',
+              tenderRef: 'DBE/EDU/2026/004',
+              type: 'Impossible Track Record',
+              severity: 'CRITICAL',
+              description: 'Company "Lighthouse Publishers" bidding on R1.6 Billion tender was registered 3 days before tender advertisement.',
+              detectedAt: '2026-05-14T08:00:00Z',
+              agentName: 'CIPC-Registry-Monitor',
+              evidence: 'CIPC Incorporation Date: 2026-04-17 vs Tender Published: 2026-04-20.',
+              status: 'OPEN'
+            },
+            {
+              id: 'RF_SCEN_4_2',
+              tenderId: 'T_SCEN_4',
+              tenderRef: 'DBE/EDU/2026/004',
+              type: 'Shell Company Pattern',
+              severity: 'CRITICAL',
+              description: 'Zero registered employees on UIF database. Zero tax returns filed with SARS.',
+              detectedAt: '2026-05-14T08:05:00Z',
+              agentName: 'SARS-Compliance-Agent',
+              evidence: 'Real-time UIF/SARS API cross-check: No physical footprint.',
+              status: 'OPEN'
+            }
+          ],
+          priceAlerts: [],
+          ownershipGraphs: [],
+          bidSubmissions: [
+            {
+              id: 'BS_SCEN_4_1',
+              tenderRef: 'DBE/EDU/2026/004',
+              tenderTitle: 'Procurement of Foundation Phase Textbooks',
+              vendorName: 'Lighthouse Publishers (Pty) Ltd',
+              vendorCSD: 'MAAA0000099',
+              submittedAt: '2026-05-14T09:00:00Z',
+              totalBidValue: 1600000000,
+              aiValidationScore: 1,
+              validationFlags: ['CIPC age too young for tender value', 'No UIF employees', 'Probable fronting shell'],
+              status: 'REJECTED',
+              evaluationStage: 'ADMIN_COMPLIANCE',
+              boqItems: []
+            }
+          ],
+          vendors: [
+            {
+              id: 'V_SCEN_4_1',
+              name: 'Lighthouse Publishers (Pty) Ltd',
+              cipcNumber: '2026/112233/07',
+              csdNumber: 'MAAA0000099',
+              reputationScore: 0,
+              riskLevel: 'CRITICAL',
+              activeContracts: 0,
+              totalContractValue: 0,
+              flags: ['Shell Company', 'Fronting'],
+              bbbeeLevel: 1,
+              province: 'National',
+              sector: 'Educational Materials',
+              legalStatus: 'SUSPENDED',
+              taxCompliant: false,
+              pastPerformance: 0
+            }
+          ]
+        };
       default:
         return null;
     }
